@@ -404,7 +404,17 @@ img {
 
 @media (max-width: 370px) {
   .footer__container {
-    grid-template-columns: repeat(1, max-content);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer__info {
+    order: 2;
+  }
+
+  .footer__contacts {
+    order: 1;
   }
 
 }
